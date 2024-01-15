@@ -1,8 +1,8 @@
-@import "../../../assets/sass/layout/layout";
+//@import "../../../assets/sass/layout/layout";
 
 .footer {
-  background: $neutrals900;
-  color: $neutrals100;
+  //background: $neutrals900;
+  //color: $neutrals100;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@
     & h1 {
       margin: 0 0 1rem;
       font-size: 2rem;
-      color: $neutrals100;
+      //color: $neutrals100;
     }
   }
   &__redesocial {
@@ -24,7 +24,7 @@
     }
     & .pi {
       font-size: 2rem;
-      color: $neutrals100;
+      //color: $neutrals100;
     }
   }
   &__copyright {
