@@ -1,4 +1,4 @@
-//@import "../../../assets/sass/layout/layout";
+@import "../../../assets/sass/layout/layout";
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
 header {
@@ -8,21 +8,21 @@ header {
     display: flex;
     align-items: center;
     padding: 10px;
-    //background: $neutrals900;
-    //border-bottom: 1px solid $neutrals700;
-    //@include media(laptop, desktop, big-screen) {
-    //  justify-content: space-between;
-    //}
-    //@include media(phone, tablet) {
-    //  justify-content: center;
-    //}
+    background: $neutrals900;
+    border-bottom: 1px solid $neutrals700;
+    @include media(laptop, desktop, big-screen) {
+      justify-content: space-between;
+    }
+    @include media(phone, tablet) {
+      justify-content: center;
+    }
     &__logo {
       text-transform: uppercase;
       font-family: 'Dela Gothic One', sans-serif;
       & h1 {
         margin: 0;
         font-size: 2rem;
-        //color: $neutrals100;
+        color: $neutrals100;
       }
     }
   }
