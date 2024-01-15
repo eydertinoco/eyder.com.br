@@ -1,0 +1,76 @@
+@mixin focused() {
+    outline: 0 none;
+    outline-offset: 0;
+    transition: box-shadow .2s;
+    box-shadow: var(--focus-ring);
+}
+
+@mixin focused-inset() {
+    outline: 0 none;
+    outline-offset: 0;
+    transition: box-shadow .2s;
+    box-shadow: inset var(--focus-ring);
+}
+
+@mixin phone() {
+  @media (min-width: 320px) and (max-width: 480px) { @content; }
+}
+@mixin tablet() {
+  @media (min-width: 481px) and (max-width: 768px) { @content; }
+}
+@mixin laptop(){
+  @media (min-width: 769px) and (max-width: 1024px) { @content; }
+}
+@mixin desktop(){
+  @media (min-width: 1025px) and (max-width: 1200px) { @content; }
+}
+@mixin big-screen(){
+  @media (min-width: 1201px){ @content; }
+}
+
+@mixin media($keys...) {
+  @each $key in $keys {
+    @if ($key == phone) {
+      @include phone {
+        @content
+      }
+    } @else if ($key == tablet) {
+      @include tablet {
+        @content
+      }
+    } @else if ($key == laptop) {
+      @include laptop {
+        @content
+      }
+    } @else if ($key == desktop) {
+      @include desktop {
+        @content
+      }
+    } @else if ($key == big-screen) {
+      @include big-screen {
+        @content
+      }
+    }
+  }
+}
+
+@mixin landscape() {
+  @media (orientation: landscape) {@content}
+}
+@mixin portrait() {
+  @media (orientation: portrait) {@content}
+}
+
+@mixin orientation($keys...) {
+  @each $key in $keys {
+    @if ($key == landscape) {
+      @include landscape {
+        @content
+      }
+    } @else if ($key == portrait) {
+      @include portrait {
+        @content
+      }
+    }
+  }
+}
