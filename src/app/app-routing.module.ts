@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from "./module/home/home.component";
+import {PageNotFoundComponent} from "./module/404/404.component";
 
 const routes: Routes = [];
 
@@ -12,6 +13,10 @@ const routes: Routes = [];
         path: '',
         component: HomeComponent
       },
+      {
+        path: '**',
+        component: PageNotFoundComponent
+      }
     ]
   )],
   exports: [RouterModule],

@@ -1,0 +1,39 @@
+@import "../../../assets/sass/layout/layout";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dela+Gothic+One&display=swap');
+
+.body404 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)),
+  url("./../../../assets/img/background404.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  & h2, p {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    text-shadow: 0 0 10px $neutrals900;
+    color: yellow;
+    overflow-wrap: break-word;
+    @include media(laptop, desktop, big-screen) {
+      font-size: 3rem;
+    };
+    @include media(phone, tablet) {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    };
+  }
+  & h2 {
+    word-break: break-all;
+  }
+}
