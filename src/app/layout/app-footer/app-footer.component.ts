@@ -12,5 +12,4 @@ export class AppFooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

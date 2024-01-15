@@ -1,0 +1,105 @@
+.mainLayout {
+  margin: 0 20px;
+
+  & h2 {
+    color: $primary500;
+    text-align: center;
+  }
+  & h3 {
+    margin: 0 0 10px 0;
+    color: $primary500;
+  }
+
+  &__twoSection {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    @include media(desktop, big-screen) {
+      flex-direction: row;
+    }
+    &--list {
+      background: $neutrals100;
+      border: 1px solid $primary500;
+      border-radius: 4px;
+      padding: 5px;
+      height: 100%;
+      width: 100%;
+      @include media(desktop, big-screen) {
+        margin-right: 10px;
+        width: 45vw;
+      }
+    }
+    &--view {
+      border: 1px solid $primary500;
+      border-radius: 4px;
+      width: 100%;
+      @include media(desktop, big-screen) {
+        width: 55vw;
+      }
+      & pdf-viewer {
+        margin: 10px 0 0;
+        width: calc(100vw - 40px);
+        height: 55vh;
+        @include media(desktop, big-screen) {
+          width: 55vw;
+          height: 70vh
+        }
+      }
+    }
+  }
+}
+
+
+.form {
+  &__body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    background: $neutrals100;
+    border-radius: 10px;
+    padding: 20px 0;
+    border: 2px solid $primary500;
+    @include media(big-screen) {
+      margin: 10px auto;
+    }
+    @include media(phone, tablet, laptop, desktop) {
+      margin: 10px 5px;
+    }
+    &__section {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+      padding: 0 10px;
+      @include media(phone, tablet, laptop) {
+        flex-direction: column;
+      }
+      @include orientation(landscape) {
+        justify-content: space-between;
+      }
+      @include orientation(portrait) {
+        justify-content: center;
+      }
+    }
+    &__column {
+      flex-direction: column;
+    }
+  }
+
+  &__divider {
+    width: 100%;
+  }
+}
+
+
+.estilos {
+  border: 1px solid $primary500;
+  border-radius: 4px;
+  background: $neutrals100;
+  padding: 20px;
+  margin: 10px auto 0;
+  max-width: 1200px;
+  & h2 {
+    margin: 0;
+  }
+}
