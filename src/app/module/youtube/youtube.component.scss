@@ -1,0 +1,40 @@
+@import "../../../assets/sass/layout/layout";
+
+.youtubeList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  @include media(phone, tablet) {
+    flex-direction: column;
+  }
+  &__article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    &__background {
+      width: 100%;
+      border-radius: 9px;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 280px;
+      & h3 {
+        position: absolute;
+        bottom: 0px;
+        text-align: center;
+        color: $neutrals100;
+        background: linear-gradient(0deg, $shadow 40%, $transparente);
+        padding: 20px 0 15px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0 0 9px 9px;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<main>
+  <section>
+    <h1>Acompanhe os videos do canal</h1>
+    <h2>NoCodeNoLife</h2>
+  </section>
+
+  <section class="youtubeList">
+
+    <article class="youtubeList__article" *ngFor="let youtubeLink of youtubeList">
+      <a href="#" routerLink="{{youtubeLink.link}}">
+        <div class="youtubeList__article__background"
+                [style.background-image]="'url(' + youtubeLink.banner + ')'">
+          <h3>{{youtubeLink.title}}</h3>
+        </div>
+      </a>
+    </article>
+
+  </section>
+
+</main>

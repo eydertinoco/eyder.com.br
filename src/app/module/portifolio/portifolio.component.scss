@@ -1,0 +1,96 @@
+@import "../../../assets/sass/layout/layout";
+
+.welcomePage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  @include media(phone, tablet) {
+    flex-direction: column;
+  }
+  &__texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    @include media(phone, tablet) {
+      position: absolute;
+      z-index: 1001;
+    }
+    & h1, h2 {
+      margin: 0;
+    }
+    & h1 {
+      font-size: 3rem;
+    }
+    & h2 {
+      font-size: 1.5rem;
+    }
+  }
+  &__img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    @include media(phone, tablet) {
+      width: 100%;
+    }
+    &--duck {
+      background-image: url("../../../assets/img/duck.jpg");
+      height: calc(100vh - 60px);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      @include media(laptop, desktop, big-screen) {
+        width: 50vw;
+      }
+      @include media(phone, tablet) {
+        width: 100vw;
+      }
+    }
+    &--jojo {
+      background-image: url("../../../assets/img/jojo_effect.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      height: 140px;
+      width: 270px;
+      top: 50px;
+    }
+  }
+}
+
+.myHistory {
+  background: $neutrals900;
+  padding: 30px 0;
+  color: $neutrals100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__img {
+    background-image: url("../../../assets/img/maceio.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    &__shadow {
+      max-width: 700px;
+      background: #00000050;
+      margin: 10px auto;
+      padding: 40px;
+      border-radius: 15px;
+      & p {
+        margin-top: 0;
+        margin-bottom: 30px;
+        text-align: justify;
+        font-size: 1.2rem;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
