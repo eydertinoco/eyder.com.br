@@ -10,6 +10,7 @@ import {AppFooterComponent} from "./layout/app-footer/app-footer.component";
 import {HomeComponent} from "./module/home/home.component";
 import {PortifolioComponent} from "./module/portifolio/portifolio.component";
 import {YoutubeComponent} from "./module/youtube/youtube.component";
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -20,10 +21,11 @@ import {YoutubeComponent} from "./module/youtube/youtube.component";
     PortifolioComponent,
     YoutubeComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgOptimizedImage
+    ],
   providers: [
     provideClientHydration()
   ],

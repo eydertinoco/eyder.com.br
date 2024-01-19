@@ -1,5 +1,9 @@
 @import "../../../assets/sass/layout/layout";
 
+main {
+  min-height: calc(100vh - 70px);
+}
+
 .welcomePage {
   display: flex;
   align-items: flex-start;
@@ -19,6 +23,7 @@
     }
     & h1, h2 {
       margin: 0;
+      font-family: 'Inter', sans-serif;
     }
     & h1 {
       font-size: 3rem;
@@ -58,39 +63,6 @@
       height: 140px;
       width: 270px;
       top: 50px;
-    }
-  }
-}
-
-.myHistory {
-  background: $neutrals900;
-  padding: 30px 0;
-  color: $neutrals100;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  &__img {
-    background-image: url("../../../assets/img/maceio.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    &__shadow {
-      max-width: 700px;
-      background: #00000050;
-      margin: 10px auto;
-      padding: 40px;
-      border-radius: 15px;
-      & p {
-        margin-top: 0;
-        margin-bottom: 30px;
-        text-align: justify;
-        font-size: 1.2rem;
-        &:last-child {
-          margin: 0;
-        }
-      }
     }
   }
 }
