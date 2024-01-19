@@ -11,6 +11,7 @@ import {HomeComponent} from "./module/home/home.component";
 import {PortifolioComponent} from "./module/portifolio/portifolio.component";
 import {YoutubeComponent} from "./module/youtube/youtube.component";
 import {NgOptimizedImage} from "@angular/common";
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -21,11 +22,12 @@ import {NgOptimizedImage} from "@angular/common";
     PortifolioComponent,
     YoutubeComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        NgOptimizedImage
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgOptimizedImage,
+    SharedModule
+  ],
   providers: [
     provideClientHydration()
   ],

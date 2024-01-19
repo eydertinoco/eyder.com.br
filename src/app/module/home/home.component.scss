@@ -6,16 +6,22 @@ main {
 
 .welcomePage {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("../../../assets/img/background_init.jpg");
+  min-height: 50vh;
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
   @include media(phone, tablet) {
     flex-direction: column;
   }
   &__texto {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    color: $neutrals100;
     width: 100%;
     @include media(phone, tablet) {
       position: absolute;
@@ -23,46 +29,12 @@ main {
     }
     & h1, h2 {
       margin: 0;
-      font-family: 'Inter', sans-serif;
     }
     & h1 {
       font-size: 3rem;
     }
     & h2 {
       font-size: 1.5rem;
-    }
-  }
-  &__img {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    @include media(phone, tablet) {
-      width: 100%;
-    }
-    &--duck {
-      background-image: url("../../../assets/img/duck.jpg");
-      height: calc(100vh - 60px);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      @include media(laptop, desktop, big-screen) {
-        width: 50vw;
-      }
-      @include media(phone, tablet) {
-        width: 100vw;
-      }
-    }
-    &--jojo {
-      background-image: url("../../../assets/img/jojo_effect.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: absolute;
-      height: 140px;
-      width: 270px;
-      top: 50px;
     }
   }
 }
