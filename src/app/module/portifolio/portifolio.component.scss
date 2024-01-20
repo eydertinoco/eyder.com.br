@@ -37,7 +37,6 @@
       width: 100%;
     }
     &--duck {
-      background-image: url("../../../assets/img/duck.jpg");
       height: calc(100vh - 60px);
       background-position: center;
       background-repeat: no-repeat;
@@ -50,7 +49,6 @@
       }
     }
     &--jojo {
-      background-image: url("../../../assets/img/jojo_effect.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -70,7 +68,6 @@
   align-items: center;
   justify-content: space-between;
   &__img {
-    background-image: url("../../../assets/img/maceio.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
