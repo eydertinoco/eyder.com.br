@@ -11,58 +11,24 @@
     </article>
   </section>
 
-  <section class="section sobreMim">
-    <h4>Sobre mim</h4>
-    <article class="sobreMim__article">
-      <div class="sobreMim__article__background"></div>
+  <section>
+    <section>
+      <h4>Últimas Postagens</h4>
+    </section>
 
-      <aside class="sobreMim__article__aside">
-        <p>{{ sobremin_texto1 }}</p>
+    <section class="section sobreMim">
+      <h4>Sobre mim</h4>
+      <article class="sobreMim__article">
+        <div class="sobreMim__article__background"></div>
 
-        <br/>
+        <aside class="sobreMim__article__aside">
+          <p>{{ sobremin_texto1 }}</p>
 
-        <p>{{ sobremin_texto2 }}</p>
-      </aside>
-    </article>
-  </section>
+          <br/>
 
-  <section class="section experience">
-    <h4>Experiência</h4>
-    <article class="experience__article">
-      <aside class="experience__article__aside">
-        <p>Prefeitura</p>
-        <app-experiencia [myExperience]="myExperienceMaceio"></app-experiencia>
-      </aside>
-
-      <aside class="experience__article__aside">
-        <p>Instituto Federal de Alagoas</p>
-        <app-experiencia [myExperience]="myExperienceIfal"></app-experiencia>
-      </aside>
-    </article>
-  </section>
-
-  <section class="section contato">
-    <h4>Contato</h4>
-    <form class="contato__form" action="https://api.staticforms.xyz/submit" method="post">
-      <div class="contato__form__column">
-        <label>Nome</label>
-        <input name="name" type="text" required/>
-      </div>
-
-      <div class="contato__form__column">
-        <label>Email</label>
-        <input name="email" type="email" required/>
-      </div>
-
-      <div class="contato__form__column">
-        <label>Texto</label>
-        <textarea name="message" required></textarea>
-      </div>
-
-      <button type="submit">Enviar</button>
-
-      <input type="hidden" name="accessKey" value="3e3cd3a3-e0b1-4a5b-b6b7-9d134207d8e9">
-      <input type="hidden" name="redirectTo" value="https://eyder.com.br">
-    </form>
+          <p>{{ sobremin_texto2 }}</p>
+        </aside>
+      </article>
+    </section>
   </section>
 </main>

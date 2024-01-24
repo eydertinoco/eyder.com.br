@@ -4,6 +4,7 @@ import { HomeComponent } from "./module/home/home.component";
 import {PageNotFoundComponent} from "./module/404/404.component";
 import {PortifolioComponent} from "./module/portifolio/portifolio.component";
 import {YoutubeComponent} from "./module/youtube/youtube.component";
+import {ContatoComponent} from "./module/contato/contato.component";
 
 const routes: Routes = [];
 
@@ -14,6 +15,10 @@ const routes: Routes = [];
       {
         path: '',
         component: HomeComponent
+      },
+      {
+        path: 'contato',
+        component: ContatoComponent
       },
       {
         path: 'portifolio',
