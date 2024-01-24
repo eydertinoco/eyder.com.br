@@ -1,0 +1,14 @@
+.redesocial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__article {
+    margin: 1rem 0;
+    & a {
+      margin: 1rem;
+      & img {
+        width: 60px;
+      }
+    }
+  }
+}
