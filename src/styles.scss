@@ -1,3 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "assets/sass/layout/_layout";
 @import "assets/sass/overrides/_overrides";
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
