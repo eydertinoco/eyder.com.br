@@ -1,7 +1,12 @@
 @import "../../../assets/sass/layout/layout";
 
 .contato {
-  background: $neutrals900;
+  background: linear-gradient(210deg ,#efefef, #c1c1c1, #efefef);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   & h4 {
     color: $neutrals100;
     margin: 0;

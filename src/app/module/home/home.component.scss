@@ -4,17 +4,39 @@ main {
   min-height: calc(100vh - 70px);
 }
 
+.hiddenSection {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 1s;
+  transform: translateX(-100%);
+}
+.showSection {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 1s;
+  transform: translateX(0);
+}
+
 .welcomePage {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   background-image: url("../../../assets/img/background_init.jpg");
-  min-height: 50vh;
+  height: 100vh;
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
   @include media(phone, tablet) {
     flex-direction: column;
+  }
+  &__shadow {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 60px;
   }
   &__texto {
     display: flex;
@@ -39,8 +61,29 @@ main {
   }
 }
 
-.section {
-
+.bodyHome {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100vh;
+  padding-top: 60px;
+  background: linear-gradient(210deg ,#efefef, #c1c1c1, #efefef);
+  &__area {
+    margin: 20px;
+    padding: 20px;
+    background: #6c757d70;
+    border-radius: 10px;
+    box-shadow: 0 0 6px black;
+  }
+  &__site {
+    width: 100%;
+  }
+  &__information {
+    width: 300px;
+  }
+  & h4 {
+    margin: 0;
+  }
 }
 
 .sobreMim {

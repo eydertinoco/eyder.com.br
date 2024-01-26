@@ -1,34 +1,44 @@
 <main>
   <section class="welcomePage">
-    <article class="welcomePage__texto">
-      <aside>
-        <h1>Hello world</h1>
-        <h2>I'm Eyder Tinoco</h2>
-        <h3>Web Developer</h3>
-      </aside>
-
-      <app-rede-social></app-rede-social>
-    </article>
-  </section>
-
-  <section>
-    <section>
-      <h4>Últimas Postagens</h4>
-    </section>
-
-    <section class="section sobreMim">
-      <h4>Sobre mim</h4>
-      <article class="sobreMim__article">
-        <div class="sobreMim__article__background"></div>
-
-        <aside class="sobreMim__article__aside">
-          <p>{{ sobremin_texto1 }}</p>
-
-          <br/>
-
-          <p>{{ sobremin_texto2 }}</p>
+    <section class="welcomePage__shadow">
+      <article class="welcomePage__texto">
+        <aside>
+          <h1>Hello world</h1>
+          <h2>I'm Eyder Tinoco</h2>
+          <h3>Web Developer</h3>
         </aside>
+
+        <app-rede-social></app-rede-social>
       </article>
     </section>
+  </section>
+
+  <section class="bodyHome">
+    <section>
+      <h4 class="hiddenSection bodyHome__area bodyHome__site">Últimas Postagens</h4>
+
+      <section class="hiddenSection bodyHome__area bodyHome__site">
+        <article>
+          <p>Teste</p>
+        </article>
+
+        <article>
+          <p>Teste</p>
+        </article>
+
+        <article>
+          <p>Teste</p>
+        </article>
+      </section>
+
+    </section>
+
+    <aside class="hiddenSection bodyHome__area bodyHome__information">
+      <h4>Sobre mim</h4>
+
+      <article class="sobreMim__article">
+        <p>{{ sobremin_texto1 }}</p>
+      </article>
+    </aside>
   </section>
 </main>
