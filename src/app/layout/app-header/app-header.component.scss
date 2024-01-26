@@ -11,7 +11,8 @@ header {
   background: $neutrals900;
   padding: 0 20px;
   height: 60px;
-  box-shadow: 0 10px 20px $neutrals900;
+  box-shadow: 0 2px 10px $neutrals900;
+  z-index: 2000;
   & .topHeader {
     display: flex;
     align-items: center;
@@ -33,6 +34,6 @@ header {
   }
 
   & nav a {
-    color: white
+    color: $neutrals100
   }
 }

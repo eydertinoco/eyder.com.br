@@ -1,9 +1,5 @@
 @import "../../../assets/sass/layout/layout";
 
-main {
-  min-height: calc(100vh - 70px);
-}
-
 .hiddenSection {
   opacity: 0;
   filter: blur(15px);
@@ -69,64 +65,54 @@ main {
   padding-top: 60px;
   background: linear-gradient(210deg ,#efefef, #c1c1c1, #efefef);
   &__area {
+    background: $neutrals400;
+    border-radius: 10px;
+    box-shadow: 0 0 6px $neutrals900;
+  }
+  &__post {
     margin: 20px;
     padding: 20px;
-    background: #6c757d70;
-    border-radius: 10px;
-    box-shadow: 0 0 6px black;
-  }
-  &__site {
     width: 100%;
+    &__title {
+      margin: 0 0 20px 0;
+      text-align: center;
+      font-size: 1.5rem;
+      border-bottom: 1px solid;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+    &__news {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      &--link {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 180px;
+        width: 250px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px $neutrals900;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        & h3 {
+          margin: 0;
+          background: linear-gradient(0deg, $neutrals900, transparent);
+          border-radius: 0 0 5px 5px;
+          width: 100%;
+          text-align: center;
+          padding: 60px 0 10px;
+          color: $neutrals100;
+          text-shadow: 0 0 4px $neutrals900;
+        }
+      }
+    }
   }
   &__information {
-    width: 300px;
-  }
-  & h4 {
-    margin: 0;
-  }
-}
-
-.sobreMim {
-  background: $neutrals900;
-  & h4 {
-    color: $neutrals100;
-    margin: 0;
-    text-align: center;
+    margin: 20px;
     padding: 20px;
-    font-size: 2rem;
-  }
-  &__article {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    &__background {
-      background-image: url("../../../assets/img/eu04.jpeg");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      border-radius: 20px;
-      @include media(laptop, desktop, big-screen) {
-        height: 350px;
-        width: 600px;
-      }
-      @include media(phone, tablet) {
-        height: 350px;
-        width: 100%;
-      }
-    }
-    &__aside {
-      color: $neutrals100;
-      width: 100%;
-      padding: 20px 20px 20px 10px;
-      margin-left: 10px;
-      border-left: 1px solid $neutrals100;
-      & p {
-        margin: 0;
-        text-align: justify;
-      }
-    }
+    width: 400px;
   }
 }

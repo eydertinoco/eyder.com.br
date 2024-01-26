@@ -1,0 +1,40 @@
+@import "../../../assets/sass/layout/layout";
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $neutrals100;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+section:nth-child(1) {
+  background: red;
+}
+section:nth-child(2) {
+  background: blue;
+}
+section:nth-child(3) {
+  background: green;
+}
+section:nth-child(4) {
+  background: darkorange;
+}
+
+.scroll-container {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.scroll-item {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+@keyframes scroll {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}

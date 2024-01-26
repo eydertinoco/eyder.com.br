@@ -14,23 +14,21 @@
   </section>
 
   <section class="bodyHome">
-    <section>
-      <h4 class="hiddenSection bodyHome__area bodyHome__site">Últimas Postagens</h4>
+    <section class="hiddenSection bodyHome__post">
+      <h4 class="bodyHome__post__title">Últimas Postagens</h4>
 
-      <section class="hiddenSection bodyHome__area bodyHome__site">
-        <article>
-          <p>Teste</p>
-        </article>
-
-        <article>
-          <p>Teste</p>
-        </article>
-
-        <article>
-          <p>Teste</p>
+      <section class="bodyHome__post__news">
+        <article *ngFor="let youtubeLink of youtubeList">
+          <a href="#" routerLink="{{youtubeLink.link}}">
+            <div class="bodyHome__post__news--link"
+                 [style.background-image]="'url(' + youtubeLink.banner + ')'">
+              <h3>{{youtubeLink.title}}</h3>
+            </div>
+          </a>
         </article>
       </section>
 
+      <a>Veja Mais</a>
     </section>
 
     <aside class="hiddenSection bodyHome__area bodyHome__information">
