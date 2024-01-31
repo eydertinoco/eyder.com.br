@@ -34,6 +34,13 @@ const routes: Routes = [];
         component: ScrollPageComponent
       },
       {
+        path: 'blog',
+        loadChildren: () =>
+          import(
+            './module/blog/blog.module'
+            ).then((m) => m.BlogModule),
+      },
+      {
         path: '**',
         component: PageNotFoundComponent
       }
