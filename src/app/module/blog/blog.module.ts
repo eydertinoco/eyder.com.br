@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 
 import { BlogRoutingModule } from './blog-routing.module';
 import {ListaNoticiaComponent} from "./pages/lista-noticia/lista-noticia.component";
+import {NoticiaComponent} from "./pages/noticia/noticia.component";
 
 
 @NgModule({
   declarations: [
-    ListaNoticiaComponent
+    ListaNoticiaComponent,
+    NoticiaComponent
   ],
   imports: [
     CommonModule,

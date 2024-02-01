@@ -1,9 +1,17 @@
-<div>
-    <h1>Noticia</h1>
-  <h1>Noticia</h1>
-  <h1>Noticia</h1>
-  <h1>Noticia</h1><h1>Noticia</h1><h1>Noticia</h1>
-  <h1>Noticia</h1>
+<section class="news">
+  <div class="news__title" [style.background-image]="'url(' + background + ')'">
+    <h1>{{titulo}}</h1>
+  </div>
 
+  <div class="news__author">
+    <div class="news__author__img" [style.background-image]="'url(' + imagemAutor + ')'"></div>
+    <aside class="news__author__info">
+      <h2>Por {{autor}}</h2>
+      <span>01/02/2024 | 14:00</span>
+    </aside>
+  </div>
 
-</div>
+  <article>
+    <p>{{texto}}</p>
+  </article>
+</section>
