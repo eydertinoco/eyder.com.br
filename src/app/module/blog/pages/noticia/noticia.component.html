@@ -1,0 +1,17 @@
+<section class="news">
+    <div class="news__title" [style.background-image]="'url(' + imagem + ')'">
+      <h1>{{titulo}}</h1>
+    </div>
+
+    <div class="news__author">
+      <div class="news__author__img" [style.background-image]="'url(' + foto + ')'"></div>
+      <aside class="news__author__info">
+        <h2>Por {{autor}}</h2>
+        <span>{{data}} | {{hora}}</span>
+      </aside>
+    </div>
+
+    <article>
+      <p>{{texto}}</p>
+    </article>
+</section>
