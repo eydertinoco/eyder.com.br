@@ -1,7 +1,14 @@
-<div>
-  <h1>lista</h1>
-  <h1>lista</h1><h1>lista</h1><h1>lista</h1><h1>lista</h1><h1>lista</h1><h1>lista</h1><h1>lista</h1><h1>lista</h1><h1>lista</h1><h1>lista</h1>
+<section class="news">
 
+  <section class="newsList">
+    <article *ngFor="let noticia of noticiasList">
+      <a href="#" routerLink="noticia/{{noticia.id}}">
+        <div class="newsList--link"
+             [style.background-image]="'url(' + noticia.imagem + ')'">
+          <h3>{{noticia.titulo}}</h3>
+        </div>
+      </a>
+    </article>
+  </section>
 
-
-</div>
+</section>
