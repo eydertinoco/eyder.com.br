@@ -12,6 +12,8 @@ import {PortifolioComponent} from "./module/portifolio/portifolio.component";
 import {YoutubeComponent} from "./module/youtube/youtube.component";
 import {NgOptimizedImage} from "@angular/common";
 import {SharedModule} from "./shared/shared.module";
+import {ContatoComponent} from "./module/contato/contato.component";
+import {ScrollPageComponent} from "./module/scrollPage/scrollPage.component";
 
 @NgModule({
   declarations: [
@@ -19,8 +21,10 @@ import {SharedModule} from "./shared/shared.module";
     AppHeaderComponent,
     AppFooterComponent,
     HomeComponent,
+    ContatoComponent,
     PortifolioComponent,
-    YoutubeComponent
+    YoutubeComponent,
+    ScrollPageComponent
   ],
   imports: [
     BrowserModule,
