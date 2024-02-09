@@ -1,47 +1,52 @@
 <main>
-  <section class="section sobreMim">
-    <h4>Sobre mim</h4>
-    <article class="sobreMim__article">
-      <div class="sobreMim__article__background"></div>
-
-      <aside class="sobreMim__article__aside">
-        <p>{{ sobremin_texto1 }}</p>
-
-        <br/>
-
-        <p>{{ sobremin_texto2 }}</p>
-      </aside>
-    </article>
+  <section class="styleSection">
   </section>
 
-  <section class="section experience">
-    <h4>Experiência</h4>
-    <article class="experience__article">
-      <aside class="experience__article__aside">
-        <p>Prefeitura</p>
-        <app-experiencia [myExperience]="myExperienceMaceio"></app-experiencia>
-      </aside>
+  <section class="styleSection">
+    <section class="section sobreMim">
+      <h4>About me</h4>
+      <article class="sobreMim__article">
+        <div class="sobreMim__article__background"></div>
 
-      <aside class="experience__article__aside">
-        <p>Instituto Federal de Alagoas</p>
-        <app-experiencia [myExperience]="myExperienceIfal"></app-experiencia>
-      </aside>
-    </article>
-  </section>
+        <aside class="sobreMim__article__aside">
+          <p>{{ sobremin_texto1 }}</p>
 
-  <section class="section experience">
-    <h4>Experiência</h4>
-    <article class="experience__article">
-      <aside class="experience__article__aside">
-        <p>Prefeitura</p>
-        <app-experiencia [myExperience]="myExperienceMaceio"></app-experiencia>
-      </aside>
+          <br/>
 
-      <aside class="experience__article__aside">
-        <p>Instituto Federal de Alagoas</p>
-        <app-experiencia [myExperience]="myExperienceIfal"></app-experiencia>
-      </aside>
-    </article>
+          <p>{{ sobremin_texto2 }}</p>
+        </aside>
+      </article>
+    </section>
+
+    <section class="section experience">
+      <h4>Experiência</h4>
+      <article class="experience__article">
+        <aside class="experience__article__aside">
+          <p>Prefeitura</p>
+          <app-experiencia [myExperience]="myExperienceMaceio"></app-experiencia>
+        </aside>
+
+        <aside class="experience__article__aside">
+          <p>Instituto Federal de Alagoas</p>
+          <app-experiencia [myExperience]="myExperienceIfal"></app-experiencia>
+        </aside>
+      </article>
+    </section>
+
+    <section class="section experience">
+      <h4>Tecnologia</h4>
+      <article class="experience__article">
+        <aside class="experience__article__aside">
+          <p>Prefeitura</p>
+          <app-experiencia [myExperience]="myExperienceMaceio"></app-experiencia>
+        </aside>
+
+        <aside class="experience__article__aside">
+          <p>Instituto Federal de Alagoas</p>
+          <app-experiencia [myExperience]="myExperienceIfal"></app-experiencia>
+        </aside>
+      </article>
+    </section>
   </section>
 </main>
 

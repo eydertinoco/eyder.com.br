@@ -1,14 +1,41 @@
 @import "../../../assets/sass/layout/layout";
 
-.sobreMim {
-  background: $neutrals900;
-  & h4 {
-    color: $neutrals100;
-    margin: 0;
-    text-align: center;
-    padding: 20px;
-    font-size: 2rem;
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../../assets/img/portifolio.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  & .styleSection {
+    width: 100%;
+    &:first-child {
+      @include media(phone, tablet) {
+        width: 0;
+      };
+    }
+    &:last-child {
+      padding: 60px 20px 20px;
+      background: $neutrals900;
+      @include media(phone, tablet) {
+        display: flex;
+        flex-direction: column;
+      };
+      & h4 {
+        color: $neutrals100;
+        text-align: center;
+        padding: 10px;
+        font-size: 2rem;
+        border: 1px solid $neutrals100;
+        border-radius: 10px;
+        margin: 10px 0;
+      }
+    }
   }
+}
+
+.sobreMim {
+  margin-top: 10px;
   &__article {
     display: flex;
     align-items: center;
@@ -46,14 +73,6 @@
 }
 
 .experience {
-  background: $neutrals900;
-  & h4 {
-    color: $neutrals100;
-    margin: 0;
-    text-align: center;
-    padding: 20px;
-    font-size: 2rem;
-  }
   &__article {
     display: flex;
     align-items: center;
