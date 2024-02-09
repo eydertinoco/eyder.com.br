@@ -116,3 +116,20 @@
     width: 400px;
   }
 }
+
+
+.buttonVejaMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & a {
+    background: red;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 5px black;
+  }
+}
