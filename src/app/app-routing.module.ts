@@ -14,7 +14,7 @@ const routes: Routes = [];
   imports: [RouterModule.forRoot(
     [
       {
-        path: '',
+        path: 'home',
         component: HomeComponent
       },
       {
@@ -39,6 +39,11 @@ const routes: Routes = [];
           import(
             './module/blog/blog.module'
             ).then((m) => m.BlogModule),
+      },
+      {
+        path: '',
+        redirectTo: '/portifolio',
+        pathMatch: 'full'
       },
       {
         path: '**',

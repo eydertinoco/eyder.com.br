@@ -1,14 +1,67 @@
 @import "../../../assets/sass/layout/layout";
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("../../../assets/img/portifolio.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  & .styleSection {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:first-child {
+      @include media(phone, tablet) {
+        width: 0;
+      };
+    }
+    &:last-child {
+      padding: 60px 20px 20px;
+      background: $neutrals900;
+      flex-direction: column;
+      & h1 {
+        color: $neutrals100;
+        text-align: center;
+        padding: 10px;
+        font-size: 2rem;
+        border: 1px solid $neutrals100;
+        border-radius: 10px;
+        margin: 10px 0;
+      }
+    }
+    & .shadowSection {
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
+      & h1 {
+        margin: 0;
+        font-size: 3rem;
+        font-weight: 500;
+        color: $neutrals100;
+        text-shadow: 0 0 10px $neutrals900;
+        font-family: 'Dela Gothic One', sans-serif;
+      }
+      & h2 {
+        font-size: 1rem;
+        margin: 0;
+        color: $neutrals100;
+        text-shadow: 0 0 10px $neutrals900;
+      }
+    }
+  }
+}
 
 .sobreMim {
-  background: $neutrals900;
-  & h4 {
-    color: $neutrals100;
-    margin: 0;
-    text-align: center;
-    padding: 20px;
-    font-size: 2rem;
-  }
+  margin-top: 10px;
   &__article {
     display: flex;
     align-items: center;
@@ -46,14 +99,6 @@
 }
 
 .experience {
-  background: $neutrals900;
-  & h4 {
-    color: $neutrals100;
-    margin: 0;
-    text-align: center;
-    padding: 20px;
-    font-size: 2rem;
-  }
   &__article {
     display: flex;
     align-items: center;

@@ -1,5 +1,11 @@
 <section *ngFor="let experience of myExperience">
-  <p>{{experience.nome}}</p>
-  <p>{{experience.dataEntrada}} - {{experience.dataSaida}}</p>
-  <p>{{experience.descricao}}</p>
+  <div class="body">
+    <div class="body__title">
+      <h2>{{experience.nome}}</h2>
+      <span *ngIf="experience.status">-</span>
+      <p>{{experience.status}}</p>
+    </div>
+    <span>{{experience.dataEntrada}} - {{experience.dataSaida}}</span>
+    <p>{{experience.descricao}}</p>
+  </div>
 </section>
