@@ -30,6 +30,15 @@ export class PortifolioComponent implements OnInit {
         "framework dentro de um projeto web junto com uma equipe de sucesso.",
     },
     {
+      nome: "Projeto ALEX",
+      dataEntrada: "Setembro 2021",
+      dataSaida: "Fevereiro 2022",
+      status: "Bolsista",
+      descricao: "Integrante do Projeto ALEX: Concepção e Implementação de uma plataforma virtual para a Educação " +
+        "Híbrida Inclusiva e Centrado no Estudante, idealizado e ministrado pelo Professor Breno Jacinto Duarte da " +
+        "Costa, atuando no front-end com o framework Vue.js."
+    },
+    {
       nome: "Indra Company",
       dataEntrada: "Maio 2022",
       dataSaida: "Dezembro 2022",
@@ -47,17 +56,6 @@ export class PortifolioComponent implements OnInit {
         " hibrida. Faço manutenções em projetos antigos e crio novas aplicações web em conjunto com o cliente, " +
         "buscando entregar uma codificação de fácil leitura e documentado no prazo definido.",
     }
-  ];
-
-  myExperienceIfal = [
-    {
-      nome: "Bolsista - Projeto ALEX",
-      dataEntrada: "Setembro 2021",
-      dataSaida: "Fevereiro 2022",
-      descricao: "Integrante do Projeto ALEX: Concepção e Implementação de uma plataforma virtual para a Educação " +
-        "Híbrida Inclusiva e Centrado no Estudante, idealizado e ministrado pelo Professor Breno Jacinto Duarte da " +
-        "Costa, atuando no front-end com o framework Vue.js."
-    },
   ];
 
   constructor() {

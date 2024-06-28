@@ -22,14 +22,14 @@ main {
     }
     &:last-child {
       padding: 60px 20px 20px;
-      background: $neutrals900;
+      background: $neutrals100;
       flex-direction: column;
       & h1 {
-        color: $neutrals100;
+        color: $neutrals900;
         text-align: center;
         padding: 10px;
         font-size: 2rem;
-        border: 1px solid $neutrals100;
+        border: 1px solid $neutrals900;
         border-radius: 10px;
         margin: 10px 0;
       }
@@ -85,11 +85,11 @@ main {
       }
     }
     &__aside {
-      color: $neutrals100;
+      color: $neutrals900;
       width: 100%;
       padding: 20px 20px 20px 10px;
       margin-left: 10px;
-      border-left: 1px solid $neutrals100;
+      border-left: 1px solid $neutrals900;
       & p {
         margin: 0;
         text-align: justify;
@@ -99,11 +99,11 @@ main {
 }
 
 .experience {
+  width: 100%;
   &__article {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 800px;
     margin: 0 auto;
     padding-bottom: 20px;
     &__background {
@@ -122,12 +122,19 @@ main {
       }
     }
     &__aside {
-      color: $neutrals100;
+      color: $neutrals900;
       width: 100%;
       padding: 20px 20px 20px 10px;
       & p {
         margin: 0;
         text-align: justify;
+      }
+      &--app {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
       }
     }
   }
