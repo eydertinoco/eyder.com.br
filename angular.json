@@ -39,9 +39,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              "src/asset/js/gtag.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
