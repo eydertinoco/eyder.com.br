@@ -1,0 +1,52 @@
+@import "../../../../assets/sass/layout/layout";
+
+.acessibilidade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include laptop() {
+    visibility: hidden;
+    height: 0;
+  }
+  @include tablet() {
+    visibility: hidden;
+    height: 0;
+  }
+  @include phone() {
+    height: 0;
+    visibility: hidden;
+  }
+  &__texto {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 40px;
+    @include laptop() {
+      visibility: hidden;
+    }
+    @include tablet() {
+      visibility: hidden;
+    }
+    @include phone() {
+      visibility: hidden;
+    }
+    & a {
+      border: 1px solid black;
+      border-radius: 4px;
+      padding: 4px;
+      @include laptop() {
+        visibility: hidden;
+      }
+      @include tablet() {
+        visibility: hidden;
+      }
+      @include phone() {
+        visibility: hidden;
+      }
+    }
+  }
+  &__vlibras {
+    position: relative;
+  }
+}

@@ -1,0 +1,16 @@
+div[vw] {
+  position: fixed !important;
+  top: 10px !important;
+  right: 63px !important;
+  margin: 0 !important;
+  transform: scale(0.75) !important;
+}
+
+[vw] [vw-access-button].active {
+}
+
+[vw] [vw-plugin-wrapper].active {
+  position:absolute;
+  min-width: 300px !important;
+  right: -70px;
+}
