@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SkillLevel } from "../../shared/enums/skill-level.enum";
 import { Introduction } from "../../shared/enums/introduction.enum";
+import { Timeline } from "../../shared/enums/timeline.enum";
 import { TecnologyService } from "../../services/TecnologyService";
 
 interface Tecnology {
@@ -88,6 +89,11 @@ export class PortifolioComponent implements OnInit {
     }
   }
 
+  escolherTema(opcao: string) {
+    console.log(opcao)
+  }
+
   protected readonly SkillLevel = SkillLevel;
   protected readonly Introduction = Introduction;
+  protected readonly Timeline = Timeline;
 }
