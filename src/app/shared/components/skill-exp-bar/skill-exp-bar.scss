@@ -1,0 +1,17 @@
+@import "../../../../assets/sass/layout/layout";
+
+.skillExpBar {
+  height: 14px;
+  background: $neutrals900;
+  border-radius: 3px;
+  &__exp {
+    height: 14px;
+    background: $secondary600;
+    border-radius: 3px;
+    position: relative;
+    &::before {
+      content: attr(per);
+      position: absolute;
+    }
+  }
+}

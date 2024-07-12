@@ -5,6 +5,8 @@ import {ExperienciaComponent} from "./components/experiencia/experiencia.compone
 import {IdiomaComponent} from "./components/idioma/idioma.component";
 import {AcessibilidadeComponent} from "./components/acessibilidade/acessibilidade.component";
 import {VlibrasComponent} from "./components/vlibras/vlibras.component";
+import {SkillExpBarComponent} from "./components/skill-exp-bar/skill-exp-bar";
+import {SkillTecnologyComponent} from "./components/skill-tecnology/skill-tecnology";
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import {VlibrasComponent} from "./components/vlibras/vlibras.component";
     ExperienciaComponent,
     IdiomaComponent,
     AcessibilidadeComponent,
-    VlibrasComponent
+    VlibrasComponent,
+    SkillExpBarComponent,
+    SkillTecnologyComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +26,9 @@ import {VlibrasComponent} from "./components/vlibras/vlibras.component";
     ExperienciaComponent,
     IdiomaComponent,
     AcessibilidadeComponent,
-    VlibrasComponent
+    VlibrasComponent,
+    SkillExpBarComponent,
+    SkillTecnologyComponent
   ],
 })
 export class SharedModule {}

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import noticias from './../../../../_files/noticias.json';
-import noticiasList from "../../../../_files/noticias.json";
+import noticias from '../../../../../assets/_files/noticias.json';
+import noticiasList from "../../../../../assets/_files/noticias.json";
 
 @Component({
     selector: 'lista-noticia',

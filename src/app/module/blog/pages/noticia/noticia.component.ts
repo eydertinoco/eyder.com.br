@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import noticias from "../../../../_files/noticias.json";
+import noticias from "../../../../../assets/_files/noticias.json";
 import {ActivatedRoute} from "@angular/router";
-import noticia from "../../../../_files/noticias.json";
+import noticia from "../../../../../assets/_files/noticias.json";
 
 @Component({
     selector: 'app-noticia',

@@ -1,0 +1,17 @@
+@import "../../../../assets/sass/layout/layout";
+
+.tecnology {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__certify {
+
+  }
+}

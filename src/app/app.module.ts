@@ -14,6 +14,8 @@ import {NgOptimizedImage} from "@angular/common";
 import {SharedModule} from "./shared/shared.module";
 import {ContatoComponent} from "./module/contato/contato.component";
 import {ScrollPageComponent} from "./module/scrollPage/scrollPage.component";
+import {TecnologyService} from "./services/TecnologyService";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -30,9 +32,11 @@ import {ScrollPageComponent} from "./module/scrollPage/scrollPage.component";
     BrowserModule,
     AppRoutingModule,
     NgOptimizedImage,
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ],
   providers: [
+    TecnologyService,
     provideClientHydration()
   ],
   bootstrap: [AppComponent]
