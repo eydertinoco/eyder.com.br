@@ -17,7 +17,7 @@
 
   <section class="styleSection">
     <section class="section sobreMim">
-      <h1>About me</h1>
+      <h3>About me</h3>
 
       <aside class="sobreMim__article__aside">
         <p>{{ aboutMe }}</p>
@@ -25,21 +25,23 @@
     </section>
 
     <section class="section timeline">
-      <h1>Work's Timeline</h1>
-      <div class="timeline__body">
-        <aside class="timeline__body__aside">
-          <timeline-component (choseTheme)="choseTheme = $event"/>
-        </aside>
-        <article class="experience__article">
-          <app-experiencia *ngIf="choseTheme"
-                           [myExperience]="getExperienceForTheme(choseTheme)"
-                           class="experience__article__aside--app"/>
-        </article>
+      <h3>Work's Timeline</h3>
+      <div class="timeline__body" [style.background-image]="'url(' + backgroundImageUrl + ')'">
+        <div class="timeline__body--shadow">
+          <aside class="timeline__body__aside">
+            <timeline-component (choseTheme)="choseTheme = $event"/>
+          </aside>
+          <article class="timeline__article">
+            <app-experiencia *ngIf="choseTheme"
+                             [myExperience]="getExperienceForTheme(choseTheme)"
+                             class="experience__article__aside--app"/>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="section skill">
-      <h1>Tecnologia & Habilidades</h1>
+      <h3>Tecnologia & Habilidades</h3>
       <article class="skill__article">
 
         <skill-tecnology *ngFor="let tecnology of listTecnologys"
@@ -52,7 +54,7 @@
     </section>
 
     <section class="section experience">
-      <h1>Social Action</h1>
+      <h3>Social Action</h3>
       <article class="experience__article">
         <p>Nucleo De Educacao Ambiental Francisco De Assis</p>
         <p>Associação dos Pais e Amigos de Leucêmicos de Alagoas -APALA</p>

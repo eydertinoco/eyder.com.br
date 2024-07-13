@@ -102,17 +102,26 @@ main {
   width: 100%;
   min-height: 100dvh;
   &__body {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &--shadow {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      background: rgba(255, 255, 255, 0.80);
+      width: 100%;
+      padding: 10px;
+    }
+    &__side {
+      width: 100%;
+      max-width: 270px;
+    }
   }
   &__article {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
     margin: 0 auto;
     padding-bottom: 20px;
+    width: 100%;
     &__background {
       background-image: url("../../../assets/img/eu04.jpeg");
       background-position: center;

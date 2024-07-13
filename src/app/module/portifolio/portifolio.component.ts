@@ -20,6 +20,9 @@ export class PortifolioComponent implements OnInit {
   choseTheme: Timeline | null = null;
 
   listTecnologys: Tecnology[] = [];
+  backgroundImageUrl = '../../assets/img/ifal.jpg';
+
+
 
   myExperienceMaceio = [
     {
