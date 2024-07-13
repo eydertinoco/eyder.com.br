@@ -28,43 +28,12 @@
       <h1>Work's Timeline</h1>
       <div class="timeline__body">
         <aside class="timeline__body__aside">
-          <div class='education'>
-            <div class='education__content' (click)="escolherTema(Timeline.LIFEBEGINNER)">
-              <h5>Onde tudo começou!</h5>
-              <span class='year'>0</span>
-            </div>
-            <div class='education__content' (click)="escolherTema(Timeline.ENG_CIVIL)">
-              <h5>Engenharia civil</h5>
-              <span class="year">1</span>
-            </div>
-            <div class='education__content' (click)="escolherTema(Timeline.ENG_SEG_TRAB)">
-              <h5>Engenharia de Segurança do Trabalho</h5>
-              <span class='year'>2</span>
-            </div>
-            <div class='education__content' (click)="escolherTema(Timeline.SISTEMA_INFORMACAO)">
-              <h5>Sistemas de Informação</h5>
-              <span class='year'>3</span>
-            </div>
-            <div class='education__content' (click)="escolherTema(Timeline.PROJECT_ALEX)">
-              <h5>Projeto Alex</h5>
-              <span class='year'>4</span>
-            </div>
-            <div class='education__content' (click)="escolherTema(Timeline.ESTAGIO)">
-              <h5>Estágio Prefeitura de Maceió</h5>
-              <span class='year'>5</span>
-            </div>
-            <div class='education__content' (click)="escolherTema(Timeline.INDRA)">
-              <h5>Indra Company</h5>
-              <span class='year'>6</span>
-            </div>
-            <div class='education__content' (click)="escolherTema(Timeline.SISTEMATECH)">
-              <h5>Sistematech</h5>
-              <span class='year'>7</span>
-            </div>
-          </div>
+          <timeline-component (choseTheme)="choseTheme = $event"/>
         </aside>
         <article class="experience__article">
-          <app-experiencia [myExperience]="myExperienceMaceio" class="experience__article__aside--app"></app-experiencia>
+          <app-experiencia *ngIf="choseTheme"
+                           [myExperience]="getExperienceForTheme(choseTheme)"
+                           class="experience__article__aside--app"/>
         </article>
       </div>
     </section>

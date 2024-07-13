@@ -17,6 +17,7 @@ interface Tecnology {
 })
 export class PortifolioComponent implements OnInit {
   aboutMe: String | undefined = Introduction.ABOUT_ME_POR;
+  choseTheme: Timeline | null = null;
 
   listTecnologys: Tecnology[] = [];
 
@@ -29,6 +30,7 @@ export class PortifolioComponent implements OnInit {
       descricao: "Atuando no desenvolvimento web, especificamente no front-end, utilizando o framework PrimeFaces. " +
         "Aprendendo na pratica a influência das aplicações back-end no desenvolvimento e as influências de um " +
         "framework dentro de um projeto web junto com uma equipe de sucesso.",
+      theme: Timeline.ESTAGIO
     },
     {
       nome: "Projeto ALEX",
@@ -37,7 +39,8 @@ export class PortifolioComponent implements OnInit {
       status: "Bolsista",
       descricao: "Integrante do Projeto ALEX: Concepção e Implementação de uma plataforma virtual para a Educação " +
         "Híbrida Inclusiva e Centrado no Estudante, idealizado e ministrado pelo Professor Breno Jacinto Duarte da " +
-        "Costa, atuando no front-end com o framework Vue.js."
+        "Costa, atuando no front-end com o framework Vue.js.",
+      theme: Timeline.PROJECT_ALEX
     },
     {
       nome: "Indra Company",
@@ -47,6 +50,7 @@ export class PortifolioComponent implements OnInit {
       descricao: "Trabalho em desenvolvimento web como programador júnior, especificamente no front-end, de forma" +
         " hibrida. Faço manutenções em projetos antigos e crio novas aplicações web, buscando entregar uma" +
         " codificação de fácil leitura e documentação no prazo definido.",
+      theme: Timeline.INDRA
     },
     {
       nome: "Sistematech",
@@ -56,6 +60,7 @@ export class PortifolioComponent implements OnInit {
       descricao: "Trabalho com desenvolvimento web com desenvolvedor pleno, especificamente no front-end, de forma" +
         " hibrida. Faço manutenções em projetos antigos e crio novas aplicações web em conjunto com o cliente, " +
         "buscando entregar uma codificação de fácil leitura e documentado no prazo definido.",
+      theme: Timeline.SISTEMATECH
     }
   ];
 
@@ -89,8 +94,10 @@ export class PortifolioComponent implements OnInit {
     }
   }
 
-  escolherTema(opcao: string) {
-    console.log(opcao)
+  getExperienceForTheme(theme: Timeline): any[] {
+    // Suponha que myExperienceMaceio é a lista completa de experiências
+    // Você pode ajustar conforme a estrutura dos seus dados
+    return this.myExperienceMaceio.filter(experience => experience.theme === theme);
   }
 
   protected readonly SkillLevel = SkillLevel;

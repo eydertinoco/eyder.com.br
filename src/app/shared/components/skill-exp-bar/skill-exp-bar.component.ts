@@ -3,8 +3,8 @@ import { SkillLevel } from "../../enums/skill-level.enum";
 
 @Component({
   selector: 'skill-exp-bar',
-  templateUrl: './skill-exp-bar.html',
-  styleUrls: ['./skill-exp-bar.scss']
+  templateUrl: './skill-exp-bar.component.html',
+  styleUrls: ['./skill-exp-bar.component.scss']
 })
 
 export class SkillExpBarComponent implements OnInit {
