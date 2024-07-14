@@ -1,5 +1,6 @@
 # Angularexample
 
+Esse projeto serve como exemplo e treino do uso do Angular, esse projeto está ativo e disponível em www.eyder.com.br
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
 
 ## Development server
