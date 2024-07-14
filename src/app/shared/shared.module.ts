@@ -8,6 +8,7 @@ import {VlibrasComponent} from "./components/vlibras/vlibras.component";
 import {SkillExpBarComponent} from "./components/skill-exp-bar/skill-exp-bar.component";
 import {SkillTecnologyComponent} from "./components/skill-tecnology/skill-tecnology.component";
 import {TimelineComponent} from "./components/timeline/timeline.component";
+import {ListCertifyComponent} from "./components/list-certify/list-certify.component";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {TimelineComponent} from "./components/timeline/timeline.component";
     VlibrasComponent,
     SkillExpBarComponent,
     SkillTecnologyComponent,
-    TimelineComponent
+    TimelineComponent,
+    ListCertifyComponent
   ],
   imports: [
     CommonModule,

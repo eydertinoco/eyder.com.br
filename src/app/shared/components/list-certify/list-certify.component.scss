@@ -1,0 +1,18 @@
+@import "../../../../assets/sass/layout/layout";
+
+.certify {
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,10 +1,15 @@
 @import "../../../../assets/sass/layout/layout";
 
 .tecnology {
-  margin: 10px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
+  @include media(tablet, laptop, desktop, big-screen) {
+    margin: 10px;
+  }
+  @include media(phone) {
+    margin: 10px 0;
+  }
   &__description {
     display: flex;
     align-items: center;
@@ -12,6 +17,12 @@
     flex-direction: column;
   }
   &__certify {
-
+    margin-bottom: 20px;
+    @include media(laptop, desktop, big-screen) {
+      width: 240px;
+    }
+    @include media(phone, tablet) {
+      width: 200px;
+    }
   }
 }

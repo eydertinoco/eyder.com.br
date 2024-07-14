@@ -1,12 +1,13 @@
 <div class="tecnology">
   <aside class="tecnology__description">
-    <img src="{{tecnologyImg}}"
-         alt="{{tecnologyName}}" width="100"/>
-    <p>{{ tecnologyName }}</p>
+    <img src="{{tecnologyImg}}" alt="{{tecnologyName}}" width="100"/>
+    <p>{{tecnologyName}}</p>
   </aside>
 
   <aside class="tecnology__certify">
-    <p>Adicionar lista de certificados ou experiência...</p>
-    <skill-exp-bar [mySkillLevel]='mySkillLevel' style="width: 100%;"></skill-exp-bar>
+    <list-certify [tecnology]="'Java'" [certifyIcon]="'Alura Icon'"
+                  [certifyImg]="'https://cdn6.aptoide.com/imgs/5/1/0/510263316ffa2f27ceb8534e57b381c6_icon.png'"
+                  [certifyUrl]="'https://cursos.alura.com.br/user/eydertinoco/course/angular-explorando-framework/formalCertificate'"/>
+    <skill-exp-bar [mySkillLevel]='mySkillLevel' style="width: 100%;"/>
   </aside>
 </div>
