@@ -4,6 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: white;
+  margin-right: 20px;
   @include laptop() {
     visibility: hidden;
     height: 0;
@@ -17,11 +19,6 @@
     visibility: hidden;
   }
   &__texto {
-    width: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: 40px;
     @include laptop() {
       visibility: hidden;
     }
@@ -31,10 +28,13 @@
     @include phone() {
       visibility: hidden;
     }
-    & a {
+    & i {
       border: 1px solid black;
       border-radius: 4px;
       padding: 4px;
+      cursor: pointer;
+      height: 30px;
+      background: red;
       @include laptop() {
         visibility: hidden;
       }
@@ -48,5 +48,36 @@
   }
   &__vlibras {
     position: relative;
+  }
+  & .changeTheme {
+    height: 30px;
+    width: 30px;
+    background: blue;
+    border-radius: 6px;
+    margin: 0 5px;
+    border: none;
+    position: relative;
+    & .svg {
+      display: flex;
+      background-position: initial;
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+    & .moonSvg {
+      background-image: url("../../../../assets/svg/moon.svg");
+      width: 75px;
+      height: 80px;
+      top: -26px;
+      left: -22px;
+      transform: scale(0.3);
+    }
+    & .sunSvg {
+      background-image: url("../../../../assets/svg/sun.svg");
+      width: 120px;
+      height: 113px;
+      transform: scale(0.22);
+      top: -42px;
+      left: -45px;
+    }
   }
 }

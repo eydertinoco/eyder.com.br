@@ -1,17 +1,30 @@
 <section class="acessibilidade">
-  <span>Acessibilidade</span>
+  <section>
+    <i>
+      <img src="assets/img/eng_flag.png" alt="English" width="30"/>
+    </i>
+    <i>
+      <img src="assets/img/bra_flag.jpg" alt="Português" width="30"/>
+    </i>
+  </section>
+
+  <section>
+    <button id="changeTheme" (click)="toggleDarkMode()" type="button" class="changeTheme"
+            aria-label="Mudar tema do site para modo claro ou escuro.">
+      <i *ngIf="dark_theme" class="svg moonSvg"></i>
+      <i *ngIf="!dark_theme" class="svg sunSvg"></i>
+    </button>
+  </section>
 
   <section class="acessibilidade__texto">
-    <span id="diminuir-fonte">
-      <a title="Diminuir Fonte" alt="Diminuir" (click)="setFontSize('a-')">
-        A-
-      </a>
-    </span>
-    <span id="aumentar-fonte">
-      <a title="Aumentar Fonte" alt="Aumentar" (click)="setFontSize('a+')">
-        A+
-      </a>
-    </span>
+    <button id="diminuir-fonte" title="Diminuir fonte da página" (click)="setFontSize('a-')"
+            aria-label="Diminuir fonte do texto em todo site">
+      A-
+    </button>
+    <button id="aumentar-fonte" title="Aumentar fonte da página" (click)="setFontSize('a+')"
+            aria-label="Aumentar fonte do texto em todo site">
+      A+
+    </button>
   </section>
 
   <section class="acessibilidade__vlibras">
