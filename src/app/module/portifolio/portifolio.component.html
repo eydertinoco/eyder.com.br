@@ -1,31 +1,22 @@
 <main>
   <section class="styleSection">
     <section class="shadowSection">
-      <h1>{{'PORTIFOLIO_TITLE' | translate}}</h1>
-      <h2>Esse site foi feito por mim</h2>
+      <h1>{{'PORTIFOLIO.TITLE' | translate}}</h1>
+      <h2>{{'PORTIFOLIO.DESCRIPTION' | translate}}</h2>
     </section>
-  </section>
-
-  <section>
-    <p>Coisas a construir...</p>
-    <p>Sistema de troca de idiomas no header usando bandeiras Estados Unidos e Brasil</p>
-    <p>Adicionar modo escuro/claro</p>
-    <p>Adicionar acessibilidade do texto e mãos</p>
-    <p>Adicionar imagens que deixe a página bonita</p>
-    <p>Atingir score 100 no google lighthouse</p>
   </section>
 
   <section class="styleSection">
     <section class="section sobreMim">
-      <h3>About me</h3>
+      <h3>{{'PORTIFOLIO.ABOUT_ME.TITLE' | translate}}</h3>
 
       <aside class="sobreMim__article__aside">
-        <p>{{ aboutMe }}</p>
+        <p>{{'PORTIFOLIO.ABOUT_ME.DESCRIPTION' | translate}}</p>
       </aside>
     </section>
 
     <section class="section timeline">
-      <h3>Work's Timeline</h3>
+      <h3>{{'PORTIFOLIO.WORK_TIMELINE.TITLE' | translate}}</h3>
       <div class="timeline__body" [style.background-image]="'url(' + backgroundImageUrl + ')'">
         <div class="timeline__body--shadow">
           <aside class="timeline__body__aside">

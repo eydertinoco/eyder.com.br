@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { SkillLevel } from "../../shared/enums/skill-level.enum";
-import { Introduction } from "../../shared/enums/introduction.enum";
 import { Timeline } from "../../shared/enums/timeline.enum";
 import { TecnologyService } from "../../services/TecnologyService";
 
@@ -16,7 +15,6 @@ interface Tecnology {
   styleUrls: ['./portifolio.component.scss']
 })
 export class PortifolioComponent implements OnInit {
-  aboutMe: String | undefined = Introduction.ABOUT_ME_POR;
   choseTheme: Timeline | null = null;
 
   listTecnologys: Tecnology[] = [];
@@ -80,7 +78,6 @@ export class PortifolioComponent implements OnInit {
     });
   }
 
-  // Função de mapeamento para converter string em SkillLevel
   private mapSkillLevel(level: string): SkillLevel {
     const skillLevel = level.replace('SkillLevel.', ''); // Remover o prefixo
     switch (skillLevel) {
@@ -104,6 +101,5 @@ export class PortifolioComponent implements OnInit {
   }
 
   protected readonly SkillLevel = SkillLevel;
-  protected readonly Introduction = Introduction;
   protected readonly Timeline = Timeline;
 }

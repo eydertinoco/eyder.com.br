@@ -1,4 +1,22 @@
 {
-  "PORTIFOLIO_TITLE": "Welcome to our website",
-  "DESCRIPTION": "This is a system for identifying people with Autism Spectrum Disorder (ASD)."
+  "PORTIFOLIO": {
+    "TITLE": "Esse site está em construção!",
+    "DESCRIPTION": "Esse site foi feito por mim",
+    "ABOUT_ME": {
+      "TITLE": "Sobre mim",
+      "DESCRIPTION": "Sou desenvolvedor front-end. Tenho experiência na criação e manutenção de projetos webs em JSF e Angular. Tenho bom conhecimento com NestJs e Java para desenvolvimento back-end. Dedico meu tempo livre para aprender e me especializar, estudando novas tecnologias e aplicando-as em projetos pessoais para aprimorar a técnica e meu entendimento."
+    },
+    "WORK_TIMELINE": {
+      "TITLE": "Linha do tempo do trabalho"
+    }
+  },
+  "HOME": {
+    "WELCOME_MESSAGE": "Bem-vindo ao meu site!",
+    "INTRO": "Aqui você encontrará informações sobre meus projetos e experiência."
+  },
+  "CONTACT": {
+    "TITLE": "Contato",
+    "EMAIL": "E-mail",
+    "PHONE": "Telefone"
+  }
 }
