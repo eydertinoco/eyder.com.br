@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import {TranslateService} from "@ngx-translate/core";
+
+interface Language {
+  name: string;
+  code: string;
+}
 
 @Component({
   selector: 'app-acessibilidade',
@@ -10,11 +16,22 @@ export class AcessibilidadeComponent implements OnInit {
 
   font_size = 16;
   dark_theme = localStorage.getItem('darktheme') === 'true';
+  dlgChangeLanguage: boolean = false;
 
-  constructor() { }
+  listLanguage: Language[] | undefined;
+  selectedLanguage: Language | undefined;
+
+  constructor(
+    private translate: TranslateService
+  ) {
+    this.translate.setDefaultLang(window.navigator.language);
+  }
   ngOnInit(): void {
     this.applyDarkThemeOnInit();
-    this.changeIconTheme();
+    this.listLanguage = [
+      {name: 'Português', code: 'pt-BR'},
+      {name: 'English', code: 'en'}
+    ]
   }
 
   async setFontSize(value: string) {
@@ -43,13 +60,22 @@ export class AcessibilidadeComponent implements OnInit {
     localStorage.setItem('darktheme', this.dark_theme.toString());
   }
 
-  changeIconTheme() {
-    console.log(document.getElementById("changeTheme"));
-  }
   applyDarkThemeOnInit() {
     if(this.dark_theme) {
       document.body.classList.add("darkTheme")
     }
   }
 
+  openDialogChangeLanguage() {
+    this.dlgChangeLanguage = true;
+  }
+
+  switchLanguage(language: any) {
+    this.translate.use(language.code);
+    this.closeDialogChangeLanguage();
+  }
+
+  closeDialogChangeLanguage() {
+    this.dlgChangeLanguage = false;
+  }
 }
