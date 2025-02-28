@@ -11,12 +11,16 @@ import {ListCertifyComponent} from "./components/list-certify/list-certify.compo
 import {DialogModule} from "primeng/dialog";
 import {DropdownModule} from "primeng/dropdown";
 import {FormsModule} from "@angular/forms";
+import {LanguageComponent} from "./components/language/language.component";
+import {DarkthemeComponent} from "./components/darktheme/darktheme.component";
 
 @NgModule({
   declarations: [
     RedeSocialComponent,
     ExperienciaComponent,
     AcessibilidadeComponent,
+    LanguageComponent,
+    DarkthemeComponent,
     VlibrasComponent,
     SkillExpBarComponent,
     SkillTecnologyComponent,
@@ -33,6 +37,8 @@ import {FormsModule} from "@angular/forms";
     RedeSocialComponent,
     ExperienciaComponent,
     AcessibilidadeComponent,
+    LanguageComponent,
+    DarkthemeComponent,
     VlibrasComponent,
     SkillExpBarComponent,
     SkillTecnologyComponent,

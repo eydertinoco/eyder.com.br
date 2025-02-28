@@ -1,30 +1,21 @@
 <section class="acessibilidade">
   <section>
-    <button id="changeLanguage" (click)="openDialogChangeLanguage()"
-            type="button" class="changeTheme acessibilidade__button"
-            aria-label="Mudar idioma da página.">
-      <i class="svg languageSvg"></i>
-    </button>
+    <app-language></app-language>
 
-    <button id="changeTheme" (click)="toggleDarkMode()"
-            type="button" class="changeTheme acessibilidade__button"
-            aria-label="Mudar tema do site para modo claro ou escuro.">
-      <i *ngIf="dark_theme" class="svg moonSvg"></i>
-      <i *ngIf="!dark_theme" class="svg sunSvg"></i>
-    </button>
+    <app-darktheme></app-darktheme>
   </section>
 
   <section class="acessibilidade__texto">
     <button id="diminuir-fonte"
             title="Diminuir fonte da página"
-            class="acessibilidade__button"
+            class="buttonAcessibilidade"
             (click)="setFontSize('a-')"
             aria-label="Diminuir fonte do texto em todo site">
       A-
     </button>
     <button id="aumentar-fonte"
             title="Aumentar fonte da página"
-            class="acessibilidade__button"
+            class="buttonAcessibilidade"
             (click)="setFontSize('a+')"
             aria-label="Aumentar fonte do texto em todo site">
       A+
@@ -34,22 +25,5 @@
   <section class="acessibilidade__vlibras">
     <app-vlibras></app-vlibras>
   </section>
-
-  <p-dialog [visible]="dlgChangeLanguage" header="Mudar idioma" [closable]="false">
-    <p-dropdown [options]="listLanguage"
-                [(ngModel)]="selectedLanguage"
-                optionLabel="name"
-                placeholder="Select a City" />
-
-    <p style="margin-bottom: 10rem;"></p>
-
-    <button (click)="switchLanguage(selectedLanguage)">
-      Aplicar
-    </button>
-
-    <button (click)="closeDialogChangeLanguage()">
-      Fechar
-    </button>
-  </p-dialog>
 
 </section>

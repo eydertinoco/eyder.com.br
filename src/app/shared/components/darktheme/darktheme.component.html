@@ -1,0 +1,6 @@
+<button id="changeTheme" (click)="toggleDarkMode()"
+        type="button" class="changeTheme buttonAcessibilidade"
+        aria-label="Mudar tema do site para modo claro ou escuro.">
+  <i *ngIf="dark_theme" class="svg moonSvg"></i>
+  <i *ngIf="!dark_theme" class="svg sunSvg"></i>
+</button>

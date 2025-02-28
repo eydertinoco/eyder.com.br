@@ -1,0 +1,22 @@
+<button id="changeLanguage" (click)="openDialogChangeLanguage()"
+        type="button" class="changeTheme buttonAcessibilidade"
+        aria-label="Mudar idioma da página.">
+  <i class="svg languageSvg"></i>
+</button>
+
+<p-dialog [visible]="dlgChangeLanguage" header="Mudar idioma" [closable]="false">
+  <p-dropdown [options]="listLanguage"
+              [(ngModel)]="selectedLanguage"
+              optionLabel="name"
+              placeholder="Select a City"/>
+
+  <p style="margin-bottom: 10rem;"></p>
+
+  <button (click)="switchLanguage(selectedLanguage)">
+    Aplicar
+  </button>
+
+  <button (click)="closeDialogChangeLanguage()">
+    Fechar
+  </button>
+</p-dialog>

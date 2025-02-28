@@ -1,0 +1,10 @@
+@import "../../../../assets/sass/layout/layout";
+
+.languageSvg {
+  background-image: url("../../../../assets/svg/language.svg");
+  width: 87px;
+  height: 85px;
+  top: -25px;
+  left: -25px;
+  transform: scale(0.3);
+}

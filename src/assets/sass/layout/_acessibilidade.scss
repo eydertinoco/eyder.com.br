@@ -1,0 +1,24 @@
+.buttonAcessibilidade {
+  background: #2771dd;
+  color: $neutrals100;
+  font-weight: 800;
+  height: 30px;
+  border: none;
+  border-radius: 6px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.changeTheme {
+  position: relative;
+  &:last-child {
+    margin: 0 5px;
+  }
+  & .svg {
+    display: flex;
+    background-position: initial;
+    background-repeat: no-repeat;
+    position: absolute;
+    color: $neutrals100;
+  }
+}
