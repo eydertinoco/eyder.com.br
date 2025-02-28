@@ -7,7 +7,41 @@
       "DESCRIPTION": "Sou desenvolvedor front-end. Tenho experiência na criação e manutenção de projetos webs em JSF e Angular. Tenho bom conhecimento com NestJs e Java para desenvolvimento back-end. Dedico meu tempo livre para aprender e me especializar, estudando novas tecnologias e aplicando-as em projetos pessoais para aprimorar a técnica e meu entendimento."
     },
     "WORK_TIMELINE": {
-      "TITLE": "Linha do tempo do trabalho"
+      "TITLE": "Linha do tempo",
+      "EXPERIENCE": [
+        {
+          "nome": "Prefeitura de Maceió",
+          "dataEntrada": "Dezembro 2020",
+          "dataSaida": "Maio 2022",
+          "status": "Estágio",
+          "descricao": "Atuando no desenvolvimento web, especificamente no front-end, utilizando o framework PrimeFaces. Aprendendo na pratica a influência das aplicações back-end no desenvolvimento e as influências de um framework dentro de um projeto web junto com uma equipe de sucesso.",
+          "theme": "Estágio da Prefeitura de Maceió"
+        },
+        {
+          "nome": "Projeto ALEX",
+          "dataEntrada": "Setembro 2021",
+          "dataSaida": "Fevereiro 2022",
+          "status": "Bolsista",
+          "descricao": "Integrante do Projeto ALEX: Concepção e Implementação de uma plataforma virtual para a Educação Híbrida Inclusiva e Centrado no Estudante, idealizado e ministrado pelo Professor Breno Jacinto Duarte da Costa, atuando no front-end com o framework Vue.js.",
+          "theme": "Projeto Alex"
+        },
+        {
+          "nome": "Indra Company",
+          "dataEntrada": "Maio 2022",
+          "dataSaida": "Dezembro 2022",
+          "status": "Júnior",
+          "descricao": "Trabalho em desenvolvimento web como programador júnior, especificamente no front-end, de forma hibrida. Faço manutenções em projetos antigos e crio novas aplicações web, buscando entregar uma codificação de fácil leitura e documentação no prazo definido.",
+          "theme": "Indra Company"
+        },
+        {
+          "nome": "Sistematech",
+          "dataEntrada": "Dezembro 2022",
+          "dataSaida": "Atualmente",
+          "status": "Pleno",
+          "descricao": "Trabalho com desenvolvimento web com desenvolvedor pleno, especificamente no front-end, de forma hibrida. Faço manutenções em projetos antigos e crio novas aplicações web em conjunto com o cliente, buscando entregar uma codificação de fácil leitura e documentado no prazo definido.",
+          "theme": "Sistematech"
+        }
+      ]
     }
   },
   "HOME": {
@@ -18,5 +52,13 @@
     "TITLE": "Contato",
     "EMAIL": "E-mail",
     "PHONE": "Telefone"
+  },
+  "404": {
+    "TITLE": "Nãoooooooooooo",
+    "DESCRIPTION": "Essa página não existe!",
+    "ERROR": "404"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "Todos os Direitos Reservados"
   }
 }

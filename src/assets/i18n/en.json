@@ -1,22 +1,61 @@
 {
   "PORTIFOLIO": {
-    "TITLE": "Esse site está em construção!",
-    "DESCRIPTION": "Esse site foi feito por mim",
+    "TITLE": "This site is under construction!",
+    "DESCRIPTION": "This site was made by me",
     "ABOUT_ME": {
-      "TITLE": "Sobre mim",
-      "DESCRIPTION": "Sou desenvolvedor front-end. Tenho experiência na criação e manutenção de projetos webs em JSF e Angular. Tenho bom conhecimento com NestJs e Java para desenvolvimento back-end. Dedico meu tempo livre para aprender e me especializar, estudando novas tecnologias e aplicando-as em projetos pessoais para aprimorar a técnica e meu entendimento."
+      "TITLE": "About me",
+      "DESCRIPTION": "I am a front-end developer. I have experience in creating and maintaining web projects using JSF and Angular. I have good knowledge of NestJS and Java for back-end development. I dedicate my free time to learning and specializing, studying new technologies, and applying them to personal projects to improve my skills and understanding."
     },
     "WORK_TIMELINE": {
-      "TITLE": "Linha do tempo do trabalho"
+      "TITLE": "Work Timeline",
+      "EXPERIENCE": [
+        {
+          "nome": "Maceió City Hall",
+          "dataEntrada": "December 2020",
+          "dataSaida": "May 2022",
+          "status": "Internship",
+          "descricao": "Working in web development, specifically in front-end, using the PrimeFaces framework. Learning firsthand the influence of back-end applications on development and the impact of a framework within a web project along with a successful team.",
+          "theme": "Maceió City Hall Internship"
+        },
+        {
+          "nome": "Project ALEX",
+          "dataEntrada": "September 2021",
+          "dataSaida": "February 2022",
+          "status": "Scholarship Holder",
+          "descricao": "Member of Project ALEX: Conception and Implementation of a virtual platform for Inclusive Hybrid Education and Student-Centered Learning, conceived and led by Professor Breno Jacinto Duarte da Costa, working on the front-end with the Vue.js framework.",
+          "theme": "Project Alex"
+        },
+        {
+          "nome": "Indra Company",
+          "dataEntrada": "May 2022",
+          "dataSaida": "December 2022",
+          "status": "Junior",
+          "descricao": "Working in web development as a junior developer, specifically in front-end, in a hybrid format. I perform maintenance on old projects and create new web applications, striving to deliver easily readable and well-documented code within the defined deadlines.",
+          "theme": "Indra Company"
+        },
+        {
+          "nome": "Sistematech",
+          "dataEntrada": "December 2022",
+          "dataSaida": "Currently",
+          "status": "Mid-Level",
+          "descricao": "Working in web development as a mid-level developer, specifically in front-end, in a hybrid format. I maintain old projects and create new web applications together with the client, striving to deliver easily readable and well-documented code within the defined deadlines.",
+          "theme": "Sistematech"
+        }
+      ]
     }
   },
   "HOME": {
-    "WELCOME_MESSAGE": "Bem-vindo ao meu site!",
-    "INTRO": "Aqui você encontrará informações sobre meus projetos e experiência."
+    "WELCOME_MESSAGE": "Welcome to my website!",
+    "INTRO": "Here you will find information about my projects and experience."
   },
   "CONTACT": {
-    "TITLE": "Contato",
-    "EMAIL": "E-mail",
-    "PHONE": "Telefone"
+    "TITLE": "Contact",
+    "EMAIL": "Email",
+    "PHONE": "Phone"
+  },
+  "404": {
+    "TITLE": "Nooooooooooooo",
+    "DESCRIPTION": "This page doesn't exist!",
+    "ERROR": "404"
   }
 }

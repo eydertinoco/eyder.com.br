@@ -24,7 +24,9 @@ export class AcessibilidadeComponent implements OnInit {
   constructor(
     private translate: TranslateService
   ) {
+    const savedLanguage = localStorage.getItem('localLang') || window.navigator.language;
     this.translate.setDefaultLang(window.navigator.language);
+    this.translate.use(savedLanguage);
   }
   ngOnInit(): void {
     this.applyDarkThemeOnInit();
@@ -72,6 +74,7 @@ export class AcessibilidadeComponent implements OnInit {
 
   switchLanguage(language: any) {
     this.translate.use(language.code);
+    localStorage.setItem('localLang', language.code);
     this.closeDialogChangeLanguage();
   }
 

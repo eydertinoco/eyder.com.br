@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {tsCreateElement} from "@angular/compiler-cli/src/ngtsc/typecheck/src/ts_util";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-404',
@@ -9,7 +9,9 @@ import {tsCreateElement} from "@angular/compiler-cli/src/ngtsc/typecheck/src/ts_
 
 export class PageNotFoundComponent implements OnInit {
 
-    constructor() { }
+    constructor(
+      private translate: TranslateService
+    ) { }
 
 
     ngOnInit(): void {
