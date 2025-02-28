@@ -1,15 +1,12 @@
 <section class="acessibilidade">
   <section>
-    <i>
-      <img src="assets/img/eng_flag.png" alt="English" width="30"/>
-    </i>
-    <i>
-      <img src="assets/img/bra_flag.jpg" alt="Português" width="30"/>
-    </i>
-  </section>
-
-  <section>
-    <button id="changeTheme" (click)="toggleDarkMode()" type="button" class="changeTheme"
+    <button id="changeLanguage"
+            type="button" class="changeTheme acessibilidade__button"
+            aria-label="Mudar idioma da página.">
+      <i class="svg languageSvg"></i>
+    </button>
+    <button id="changeTheme" (click)="toggleDarkMode()"
+            type="button" class="changeTheme acessibilidade__button"
             aria-label="Mudar tema do site para modo claro ou escuro.">
       <i *ngIf="dark_theme" class="svg moonSvg"></i>
       <i *ngIf="!dark_theme" class="svg sunSvg"></i>
@@ -17,11 +14,17 @@
   </section>
 
   <section class="acessibilidade__texto">
-    <button id="diminuir-fonte" title="Diminuir fonte da página" (click)="setFontSize('a-')"
+    <button id="diminuir-fonte"
+            title="Diminuir fonte da página"
+            class="acessibilidade__button"
+            (click)="setFontSize('a-')"
             aria-label="Diminuir fonte do texto em todo site">
       A-
     </button>
-    <button id="aumentar-fonte" title="Aumentar fonte da página" (click)="setFontSize('a+')"
+    <button id="aumentar-fonte"
+            title="Aumentar fonte da página"
+            class="acessibilidade__button"
+            (click)="setFontSize('a+')"
             aria-label="Aumentar fonte do texto em todo site">
       A+
     </button>
